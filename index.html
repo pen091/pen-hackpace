@@ -1,0 +1,30 @@
+{% extends "hackspace_app/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="topics-grid">
+    <div class="category">
+        <h2>PROGRAMMING</h2>
+        <div class="topics">
+            <a href="{% url 'hackspace_app:topic_detail' slug='python-programming' %}" class="topic-card">PYTHON PROGRAMMING</a>
+            <a href="{% url 'hackspace_app:topic_detail' slug='bashscript' %}" class="topic-card">BASHSCRIPT</a>
+        </div>
+    </div>
+    
+    <div class="category">
+        <h2>EMBEDDED</h2>
+        <div class="topics">
+            <a href="{% url 'hackspace_app:topic_detail' slug='linux' %}" class="topic-card">LINUX</a>
+            <a href="{% url 'hackspace_app:topic_detail' slug='programming' %}" class="topic-card">PROGRAMMING</a>
+            <a href="{% url 'hackspace_app:topic_detail' slug='bare-bone' %}" class="topic-card">BARE BONE</a>
+        </div>
+    </div>
+    
+    <div class="category">
+        <h2>COMMAND LINE</h2>
+        <div class="topics">
+            <a href="{% url 'hackspace_app:topic_detail' slug='administration' %}" class="topic-card">ADMINISTRATION</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
